@@ -1,0 +1,73 @@
+.qna {
+  color: white;
+  margin: 0 auto 0.5rem;
+  padding: 0 0 1rem;
+
+  @include respond(tablet-768) {
+    max-width: 90%;
+  }
+
+  @include respond(desktop-1024) {
+    max-width: 55%;
+  }
+  &__question {
+    background-color: #333333;
+    border: none;
+    border-radius: 0.1rem;
+    color: white;
+    display: flex;
+    font-size: 2.6rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    & svg {
+      max-height: 1.5rem;
+      transform: rotate(45deg);
+      transition: all 0.1s;
+
+      @include respond(tablet-768) {
+        max-height: 2rem;
+      }
+    }
+  }
+
+  &__title {
+    &--watch {
+      padding: 2rem 4rem;
+      @include respond(tablet-768) {
+        padding: 5rem;
+      }
+    }
+  }
+
+  & h2 {
+    font-size: 2.6rem;
+  }
+
+  & h3 {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  & p {
+    font-size: 1.8rem;
+  }
+}
+
+.collapsible {
+  &--qna {
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 1120px;
+  }
+
+  &__heading {
+    &--qna {
+      margin: 0 auto 3px;
+      border-radius: 1rem;
+      width: 100%;
+    }
+  }
+}

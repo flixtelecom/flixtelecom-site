@@ -1,0 +1,18 @@
+.watch-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  @include respond(tablet-768) {
+    padding: 2rem 5rem;
+  }
+  &__logo {
+    & img {
+      max-width: 9rem;
+      @include respond(tablet-768) {
+        min-width: 15rem;
+      }
+    }
+  }
+}

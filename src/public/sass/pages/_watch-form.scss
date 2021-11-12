@@ -1,0 +1,84 @@
+.watch-form__body {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.form {
+  &__nav {
+    border-bottom: 0.5px solid #d4d4d4;
+    box-sizing: border-box;
+    padding: 1rem 1.5rem;
+    width: 100%;
+
+    @include respond(tablet-768) {
+      padding: 2rem 4rem;
+    }
+
+    &--wrapper {
+      max-width: 1120px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+    }
+
+    &--logo {
+      & img {
+        max-height: 5rem;
+
+        @include respond(tablet-768) {
+          max-height: 7rem;
+        }
+      }
+    }
+
+    &--btn {
+      & a {
+        color: black;
+        font-size: 1.4rem;
+        font-weight: 700;
+
+        @include respond(tablet-768) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  &__header {
+    margin: auto;
+  }
+
+  &__hero {
+    padding: 4rem 3.2rem 1rem;
+
+    @include respond(tablet-768) {
+      max-width: 55rem;
+    }
+
+    &__title {
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: normal;
+      text-align: left;
+
+      @include respond(tablet-768) {
+        font-size: 5rem;
+      }
+    }
+
+    &__subtitle {
+      font-size: 1.9rem;
+      font-weight: 400;
+      padding: 0.5rem 0 1rem;
+      text-align: left;
+
+      @include respond(tablet-768) {
+        font-size: 3rem;
+      }
+    }
+  }
+}

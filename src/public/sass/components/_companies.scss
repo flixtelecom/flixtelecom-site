@@ -1,0 +1,13 @@
+.companies {
+  margin: 4rem auto;
+  max-width: 1150px;
+
+  &__img {
+    &-container {
+      margin-top: 4rem;
+      height: auto;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}

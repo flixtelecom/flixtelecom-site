@@ -1,0 +1,106 @@
+.site-footer {
+  max-width: 1120px;
+  margin: auto;
+  // background-color: tan;
+  &__wrapper {
+    padding: 2rem;
+
+    &--index {
+      background-color: #fff;
+    }
+
+    &--watch {
+      background-color: #000;
+
+      &--form {
+        background-color: #f3f3f3;
+        max-height: 100vh;
+      }
+    }
+
+    &--index a {
+      color: #000;
+      transition: all 0.2s;
+      &:hover {
+        color: lighten(#000, 40%);
+        transition: all 0.2s;
+      }
+    }
+  }
+  &__top,
+  &__item {
+    text-align: left;
+    font-size: 1.6rem;
+    color: #757575;
+    transition: all 0.2s;
+    &:hover {
+      color: lighten(#757575, 20%);
+      transition: all 0.2s;
+    }
+  }
+
+  &__list-wrapper {
+    @include respond(tablet-768) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--1 {
+      margin-right: 4rem;
+
+      @include respond(tablet-768) {
+        margin-right: 20rem;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    @include respond(tablet-768) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 3rem;
+      align-items: flex-start;
+    }
+  }
+  &__social-media {
+    &--wrapper {
+      display: flex;
+      flex-direction: column;
+      & img {
+        min-width: 5rem;
+        max-width: 5rem;
+      }
+    }
+
+    &--header {
+      margin-top: 3rem;
+
+      & h3 {
+        font-size: 1.6rem;
+        color: #757575;
+        text-align: left;
+      }
+    }
+
+    &--icons {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: flex-start;
+
+      @include respond(tablet-768) {
+        justify-content: space-evenly;
+        margin-top: 1rem;
+      }
+
+      & a {
+        padding-right: 3rem;
+
+        @include respond(tablet-768) {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

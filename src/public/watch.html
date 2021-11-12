@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="icon" href="img/flix-logo-2.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Flix Watch</title>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1089119714908189");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1089119714908189&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+  <body class="body body--watch">
+    <header class="watch-header">
+      <nav class="watch-nav">
+        <div class="watch-nav__logo">
+          <a href=""><img src="img/watch-branco.png" alt="Flix Logo" /></a>
+        </div>
+
+        <div class="watch-nav__list">
+          <a
+            href="https://watch.tv.br/acessar-sua-conta"
+            class="btn-nav-watch"
+            target="_blank"
+            >Entrar</a
+          >
+        </div>
+      </nav>
+
+      <div
+        data-aos="fade-top"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+        class="watch-hero"
+      >
+        <header class="watch-hero__header">
+          <div class="watch-hero--title">
+            <h1>
+              Filmes, séries, desenhos e muita diversão. Tudo isso e muito mais
+              por apenas <span class="linear-wipe">R$9,90.</span>
+            </h1>
+          </div>
+          <div class="watch-hero--subtitle">
+            <h2>Assista onde quiser. Cancele quando quiser.</h2>
+          </div>
+
+          <div class="form-container">
+            <h2>
+              Pronto para assistir? Informe seu email para criar ou reiniciar
+              sua assinatura.
+            </h2>
+
+            <form
+              action="https://app.convertkit.com/forms/2291900/subscriptions"
+              class="seva-form formkit-form"
+              method="post"
+              data-sv-form="2291900"
+              data-uid="d4001b914b"
+              data-format="inline"
+              data-version="5"
+              data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Ótimo, você será redirecionado para completar sua inscrição!","redirect_url":""},"analytics":{"google":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://convertkit.com?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
+              min-width="400 500 600 700 800"
+            >
+              <div data-style="clean">
+                <ul
+                  class="formkit-alert formkit-alert-error"
+                  data-element="errors"
+                  data-group="alert"
+                ></ul>
+                <div
+                  data-element="fields"
+                  data-stacked="true"
+                  class="seva-fields formkit-fields"
+                >
+                  <div class="formkit-field">
+                    <input
+                      class="formkit-input"
+                      name="email_address"
+                      aria-label="Email"
+                      placeholder="Email"
+                      required=""
+                      type="email"
+                      style="
+                        color: rgb(0, 0, 0);
+                        border-color: rgb(227, 227, 227);
+                        border-radius: 4px;
+                        font-weight: 400;
+                      "
+                    />
+                  </div>
+                  <button
+                    data-element="submit"
+                    class="formkit-submit formkit-submit"
+                    style="
+                      color: rgb(255, 255, 255);
+                      background-color: rgb(232, 36, 37);
+                      border-radius: 4px;
+                      font-weight: 700;
+                    "
+                  >
+                    <div class="formkit-spinner">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <span class="">Vamos lá!</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </header>
+      </div>
+    </header>
+
+    <main class="watch-main">
+      <section class="watch-section watch-section--enjoy-on-tv">
+        <div class="content-component content-component--enjoy-on-tv">
+          <div
+            data-aos="fade-top"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+            class="content-component__text"
+          >
+            <div class="content-component__text--title">
+              <h2>Aproveite em todos os lugares.</h2>
+            </div>
+            <div class="content-component__text--subtitle">
+              <p>
+                Assita no celular, computador, na TV, chromecast e em diversos
+                aparelhos e dispositivos. Na Flix o entretenimento te acompanha
+                onde você estiver.
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-top"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+            class="content-component__img"
+          >
+            <picture>
+              <source srcset="img/device-pile.png" media="" type="" />
+              <img src="" alt="" srcset="" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="watch-section watch-section--watch-everywhere">
+        <div
+          data-aos="fade-top"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+          class="content-component content-component--watch-everywhere"
+        >
+          <div class="content-component__text">
+            <div class="content-component__text--title">
+              <h2>Assista quando quiser.</h2>
+            </div>
+            <div class="content-component__text--subtitle">
+              <p>
+                Assista no celular, tablet, Smart TV ou notebook sem pagar a
+                mais por isso.
+              </p>
+            </div>
+          </div>
+          <div class="content-component__img">
+            <picture>
+              <source srcset="img/tv.png" media="" type="" />
+              <img src="" alt="" srcset="" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="watch-section watch-section--profiles-for-kid">
+        <div
+          data-aos="fade-top"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+          class="content-component content-component--profiles-for-kid"
+        >
+          <div class="content-component__text">
+            <div class="content-component__text--title">
+              <h2>Diversão para a garotada.</h2>
+            </div>
+            <div class="content-component__text--subtitle">
+              <p>
+                O Noggin é o único serviço de assinatura em que a aprendizagem é
+                dirigida pelos queridos personagens do Nick Jr. que seus filhos
+                conhecem e amam! Apresentado por especialistas com mais de 30
+                anos de experiência em educação divertida para as crianças em
+                idade pré-escolar.
+              </p>
+            </div>
+          </div>
+          <div class="content-component__img">
+            <picture>
+              <source srcset="img/hm-dslgd-info-img-3.png" media="" type="" />
+              <img src="" alt="" srcset="" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="watch-section watch-section--qna">
+        <div
+          data-aos="fade-top"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+          class="qna qna--watch"
+          id="qna qna--watch"
+        >
+          <h2 class="qna__title qna__title--watch" id="qna__title">
+            Perguntas frequentes
+          </h2>
+
+          <div class="collapsible collapsible--qna collapsible--qna-1">
+            <header class="collapsible__heading collapsible__heading--qna">
+              <button class="qna__question">
+                <h3>O que á a Flix Watch</h3>
+
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="times"
+                  class="svg-inline--fa fa-times fa-w-11"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 352 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                  ></path>
+                </svg>
+              </button>
+            </header>
+            <div class="collapsible__content collapsible__content--qna">
+              <p class="watch-p">
+                A Flix Watch é um serviço de transmissão online que oferece uma
+                ampla variedade de séries, filmes e documentários premiados em
+                milhares de aparelhos conectados à internet. Você pode assistir
+                a quantos filmes e séries quiser, quando e onde quiser, sem
+                comerciais – tudo por um preço mensal bem acessível. Aqui você
+                sempre encontra novidades. A cada semana, adicionamos novas
+                séries e filmes.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapsible collapsible--qna collapsible--qna-2">
+            <header class="collapsible__heading collapsible__heading--qna">
+              <button class="qna__question">
+                <h3>Quanto custa a Flix Watch?</h3>
+
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="times"
+                  class="svg-inline--fa fa-times fa-w-11"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 352 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                  ></path>
+                </svg>
+              </button>
+            </header>
+            <div class="collapsible__content collapsible__content--qna">
+              <p class="watch-p">
+                Assista à Flix Watch no seu celular, tablet, Smart TV, notebook
+                ou aparelho de streaming por uma taxa mensal única. O plano tem
+                taxa de R$9,90 por mês. Sem contrato nem taxas extras.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapsible collapsible--qna collapsible--qna-3">
+            <header class="collapsible__heading collapsible__heading--qna">
+              <button class="qna__question">
+                <h3 id="qna__question--onde-posso-assistir">
+                  Onde posso assistir?
+                </h3>
+
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="times"
+                  class="svg-inline--fa fa-times fa-w-11"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 352 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                  ></path>
+                </svg>
+              </button>
+            </header>
+            <div class="collapsible__content collapsible__content--qna">
+              <p class="watch-p">
+                Assista onde quiser, o quanto quiser e em um número ilimitado de
+                aparelhos. Faça login com sua conta Flix Watch em
+                watch.flixtelecom.com.br para começar a assistir no computador
+                ou em qualquer aparelho conectado à Internet compatível com o
+                aplicativo Watch, como Smart TVs, smartphones, tablets,
+                aparelhos de streaming e videogames.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapsible collapsible--qna collapsible--qna-4">
+            <header class="collapsible__heading collapsible__heading--qna">
+              <button class="qna__question">
+                <h3>Como faço para cancelar?</h3>
+
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="times"
+                  class="svg-inline--fa fa-times fa-w-11"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 352 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                  ></path>
+                </svg>
+              </button>
+            </header>
+            <div class="collapsible__content collapsible__content--qna">
+              <p class="watch-p">
+                A Flix Watch é flexível. Você pode cancelar a sua assinatura
+                quando quiser, basta entrar em contato com a nossa Centra de
+                Atendimento pelo WhatsApp (11) 95186-7509, ou enviar um email
+                para watch@flixtelecom.com.br. Você não paga nada pelo
+                cancelamento, e quando desejar voltar, é só entrar em contato
+                com a gente novamente.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapsible collapsible--qna collapsible--qna-5">
+            <header class="collapsible__heading collapsible__heading--qna">
+              <button class="qna__question">
+                <h3>O que posso assistir na Flix Watch?</h3>
+
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="times"
+                  class="svg-inline--fa fa-times fa-w-11"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 352 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                  ></path>
+                </svg>
+              </button>
+            </header>
+            <div class="collapsible__content collapsible__content--qna">
+              <p class="watch-p">
+                A Flix Watch tem um grande catálogo de filmes, documentários,
+                séries, e muito mais. Assista o quanto quiser, quando quiser.
+              </p>
+            </div>
+          </div>
+
+          <div class="collapsible collapsible--qna collapsible--qna-6">
+            <header class="collapsible__heading collapsible__heading--qna">
+              <button class="qna__question">
+                <h3>A Flix Watch é adequada para crianças?</h3>
+
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="times"
+                  class="svg-inline--fa fa-times fa-w-11"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 352 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                  ></path>
+                </svg>
+              </button>
+            </header>
+            <div class="collapsible__content collapsible__content--qna">
+              <p class="watch-p">
+                A experiência infantil da Flix Watch faz parte da sua assinatura
+                para que as crianças se divirtam em seu próprio espaço com
+                séries e filmes familiares sob a supervisão dos pais.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <h2>
+            Pronto para assistir? Informe seu email para criar ou reiniciar sua
+            assinatura.
+          </h2>
+          <form
+            action="https://app.convertkit.com/forms/2291900/subscriptions"
+            class="seva-form formkit-form"
+            method="post"
+            data-sv-form="2291900"
+            data-uid="d4001b914b"
+            data-format="inline"
+            data-version="5"
+            data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Ótimo, você será redirecionado para completar sua inscrição!","redirect_url":""},"analytics":{"google":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://convertkit.com?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
+            min-width="400 500 600 700 800"
+          >
+            <div data-style="clean">
+              <ul
+                class="formkit-alert formkit-alert-error"
+                data-element="errors"
+                data-group="alert"
+              ></ul>
+              <div
+                data-element="fields"
+                data-stacked="true"
+                class="seva-fields formkit-fields"
+              >
+                <div class="formkit-field">
+                  <input
+                    class="formkit-input"
+                    name="email_address"
+                    aria-label="Email"
+                    placeholder="Email"
+                    required=""
+                    type="email"
+                    style="
+                      color: rgb(0, 0, 0);
+                      border-color: rgb(227, 227, 227);
+                      border-radius: 4px;
+                      font-weight: 400;
+                    "
+                  />
+                </div>
+                <button
+                  data-element="submit"
+                  class="formkit-submit formkit-submit"
+                  style="
+                    color: rgb(255, 255, 255);
+                    background-color: rgb(232, 36, 37);
+                    border-radius: 4px;
+                    font-weight: 700;
+                  "
+                >
+                  <div class="formkit-spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <span class="">Vamos lá!</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer__wrapper site-footer__wrapper--watch">
+      <div class="site-footer">
+        <a href="tel:11951867509" class="site-footer__top"
+          >Dúvidas? Ligue (11) 95186-7509</a
+        >
+        <p class="site-footer__top">
+          Ou
+          <a
+            href="https://api.whatsapp.com/send?phone=5511951867509&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20assinar%20o%20Flix%20Watch!"
+            target="_blank"
+            >clique aqui</a
+          >
+          e fale conosco pelo WhatsApp.
+        </p>
+        <div class="site-footer__content">
+          <div class="site-footer__list-wrapper">
+            <div class="site-footer__list-wrapper--1">
+              <ul class="site-footer__links">
+                <li>
+                  <a href="#qna__title" class="site-footer__item"
+                    >Perguntas frequentes</a
+                  >
+                </li>
+
+                <li>
+                  <a href="#popup" class="site-footer__item"
+                    >Central de ajuda</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="entre-em-contato-watch.html"
+                    class="site-footer__item"
+                    >Entre em contrato</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="site-footer__social-media--wrapper">
+            <header class="site-footer__social-media--header">
+              <h3>Siga-nos nas redes sociais</h3>
+            </header>
+            <div class="site-footer__social-media--icons">
+              <a
+                href="https://www.facebook.com/flixtelecom"
+                class="site-footer__facebook-icon"
+                target="_blank"
+              >
+                <img src="img/facebook.svg" alt="" />
+              </a>
+              <a
+                href="https://www.instagram.com/flixtelecom/"
+                class="site-footer__instagram-icon"
+                target="_blank"
+              >
+                <img src="img/instagram.svg" alt="" srcset="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <!-- <div class="popup__left">
+          <img src="img/popup-image.png" alt="Tour photo" class="popup__img" />
+        </div> -->
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Telefones de contato:
+          </h2>
+          <h3>Telefone Geral</h3>
+          <a class="popup__text" href="tel:11951867509" target="_blank"
+            >(11) 95186-7509</a
+          >
+
+          <h3>WhatsApp</h3>
+          <a
+            href="https://api.whatsapp.com/send?phone=5511951867509&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20assinar%20o%20Flix%20Watch!"
+            class="popup__text"
+            target="_blank"
+            >(11) 95186-7509</a
+          >
+
+          <h3>E-mail</h3>
+          <a
+            href="email:watch@flixtelecom.com.br"
+            class="popup__text"
+            target="_blank"
+            >watch@flixtelecom.com.br</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <a
+      href="https://api.whatsapp.com/send?phone=5511951867509&text=Ol%C3%A1!"
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+    <script src="javascript/watch-redirect.js"></script>
+    <script src="javascript/collapsible.js"></script>
+  </body>
+</html>

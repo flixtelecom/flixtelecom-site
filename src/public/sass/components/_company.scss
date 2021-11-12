@@ -1,0 +1,57 @@
+.company {
+  background-color: #3a3a3a;
+  max-width: 1024px;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  @include respond(tablet-768) {
+    min-height: 35rem;
+  }
+
+  & h2,
+  p {
+    color: white;
+  }
+
+  & p {
+    @include respond(tablet-768) {
+      text-align: left;
+    }
+  }
+
+  &__container {
+    @include respond(tablet-768) {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &--text {
+      margin-top: 2rem;
+      display: block;
+      @include respond(tablet-768) {
+        margin-top: 0;
+        width: 40%;
+      }
+    }
+
+    &--cta {
+      margin-top: 2rem;
+      text-align: center;
+      display: block;
+
+      @include respond(tablet-768) {
+        margin-top: 0;
+      }
+
+      & a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}

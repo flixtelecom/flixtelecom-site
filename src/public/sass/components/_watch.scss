@@ -1,0 +1,23 @@
+.watch-header {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0px,
+      rgba(0, 0, 0, 0.5) 20%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("../img/hero-watch3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include respond(tablet-768) {
+    height: 98vh;
+  }
+}
+
+.watch-section {
+  background-color: #000;
+
+  &--qna {
+    margin: auto;
+  }
+}

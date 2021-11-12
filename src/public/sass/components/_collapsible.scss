@@ -1,0 +1,39 @@
+.collapsible {
+  display: flex;
+
+  &--qna {
+    flex-direction: column;
+  }
+
+  &__content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    &--qna {
+      background-color: #333;
+
+      & p {
+        padding: 2rem;
+        border-radius: 1rem;
+        text-align: left;
+        text-align-last: left;
+      }
+    }
+  }
+
+  &__header {
+    margin-top: 0;
+  }
+
+  &--expanded &__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
+
+  &--expanded .qna__question svg {
+    transform: rotate(0);
+    transition: all 0.1s;
+  }
+}

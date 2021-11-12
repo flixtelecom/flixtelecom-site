@@ -1,0 +1,54 @@
+.internet--desktop {
+  display: none;
+
+  @include respond(tablet-768) {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+    &__content {
+      padding-left: 4.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      &--title h2,
+      &--subtitle p {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.internet--mobile {
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+  &__img {
+    margin-bottom: 4rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--title h2,
+    &--subtitle p {
+      text-align: center;
+    }
+
+    &--title {
+      padding: 1.2rem 0 2rem;
+    }
+
+    &--subtitle {
+      margin-bottom: 4rem;
+    }
+  }
+
+  @include respond(tablet-768) {
+    display: none;
+  }
+}

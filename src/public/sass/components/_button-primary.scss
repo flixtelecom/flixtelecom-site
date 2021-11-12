@@ -1,0 +1,123 @@
+.btn-primary {
+  background-color: #e82425;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1.2rem 3.2rem;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: lighten(#e82425, 15%);
+    transition: all 0.2s ease-in-out;
+  }
+
+  @include respond(tablet-768) {
+    font-size: 1.8rem;
+    padding: 2rem;
+  }
+
+  &--navbar {
+    margin: 1rem 0 0;
+  }
+}
+
+//
+
+.btn-pricing-plans {
+  background-color: #e82425;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  padding: 1.2rem 3.2rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: lighten(#e82425, 20%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  @include respond(tablet-768) {
+    font-size: 1.4rem;
+  }
+}
+
+.btn-company {
+  background-color: #e82425;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1.2rem 3.2rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: lighten(#e82425, 15%);
+    transition: all 0.2s ease-in-out;
+  }
+
+  @include respond(tablet-768) {
+    font-size: 1.8rem;
+    min-width: 25rem;
+    padding: 2rem 6rem;
+  }
+
+  &--navbar {
+    margin: 1rem 0 0;
+  }
+}
+
+.btn-nav-watch {
+  font-size: 1.4rem;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+  background-color: #e82425;
+  transition: all 0.3s;
+
+  @include respond(tablet-768) {
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+  }
+
+  &:hover {
+    background-color: lighten(#e82425, 10%);
+    transition: all 0.3s;
+  }
+}
+
+.btn--email-form {
+  background-color: #e82425;
+  outline: none;
+  border: none;
+  color: white;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: lighten(#e82425, 10%);
+    transition: all 0.3s;
+  }
+
+  @include respond(tablet-768) {
+    margin: 0 0 0 0.5rem;
+    font-size: 2.3rem;
+
+    white-space: nowrap;
+  }
+}
