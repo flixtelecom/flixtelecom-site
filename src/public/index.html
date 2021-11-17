@@ -1141,7 +1141,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="ModalBanner" onclick="window.open('https://api.whatsapp.com/send?phone=552430258100&text=Olá%2C%20eu%20gostaria%20de%20assinar%20um%20plano.', '_blank');"></div>
+            <div class="ModalBanner" onclick="AbreWhatsModal()"></div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -1156,6 +1156,34 @@
       .ModalBanner{background-image:url('img/banner-flix.png'); background-size:cover; max-height:512px; max-width:288px; height:512px; width:288px;}
       .ModalBanner:hover{cursor:pointer;}
     </style>
+    
+    <script>
+      function AbreWhatsModal() {
+        ViuModal();
+        window.open('https://api.whatsapp.com/send?phone=552430258100&text=Olá%2C%20eu%20gostaria%20de%20assinar%20um%20plano.', '_blank');
+      }
+      
+      function ViuModal() {
+        document.cookie = "clicou_modal=s; path=/";
+      }
+      
+      function lerCookie(name) {
+          var nameEQ = name + "=";
+          var ca = document.cookie.split(';');
+          for(var i=0;i < ca.length;i++) {
+              var c = ca[i];
+              while (c.charAt(0)==' ') c = c.substring(1,c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+          }
+          return null;
+      }
+      
+      var clicou_modal = lerCookie('clicou_modal');
+      
+      if (clicou_modal != "S") {
+        $('#ModalHome').modal('toggle');
+      }
+    </script>
     
   </body>
 </html>
