@@ -1141,7 +1141,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <img src="img/banner-flix.png" style="width:100%;" onclick="window.open('https://api.whatsapp.com/send?phone=552430258100&text=Olá%2C%20eu%20gostaria%20de%20assinar%20um%20plano.', '_blank');">
+            <div class="ModalBanner" onclick="window.open('https://api.whatsapp.com/send?phone=552430258100&text=Olá%2C%20eu%20gostaria%20de%20assinar%20um%20plano.', '_blank');"></div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -1153,6 +1153,8 @@
     <style>
       .modal{z-index:99999 !important;}
       .modal-backdrop{z-index:99998 !important;}
+      .ModalBanner{background-image:url('img/banner-flix.png')};
+      .ModalBanner:hover{cursor:pointer;}
     </style>
     
   </body>
