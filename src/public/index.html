@@ -1132,7 +1132,7 @@
     </script>
     
     <div class="modal" tabindex="-1" role="dialog" id="ModalHome">
-      <div class="modal-dialog-centered" role="document">
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">Modal title</h5>
@@ -1150,5 +1150,12 @@
         </div>
       </div>
     </div>
+    
+    <style>
+      .modal{z-index:99999 !important;}
+      .modal-backdrop{z-index:99998 !important;}
+      
+    </style>
+    
   </body>
 </html>
